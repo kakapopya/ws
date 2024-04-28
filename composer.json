@@ -25,7 +25,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "WhatsapiServiceProvider"
+                "Lambq\\Ws\\WhatsapiServiceProvider"
             ]
         }
     }
