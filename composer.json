@@ -13,7 +13,10 @@
             "email": "cbterli@gmail.com"
         }
     ],
-    "require": {},
+    "require": {
+        "php": ">=5.4",
+        "lambq/whatsapi": "^0.0.1"
+    },
     "autoload": {
         "psr-4": {
             "Lambq\\Ws\\": "src"
