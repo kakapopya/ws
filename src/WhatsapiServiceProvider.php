@@ -5,7 +5,7 @@ use Config;
 use WhatsProt;
 use Illuminate\Support\ServiceProvider;
 
-class WsServiceProvider extends ServiceProvider
+class WhatsapiServiceProvider extends ServiceProvider
 {
     /**
      * Indicates if loading of the provider is deferred.
