@@ -1,0 +1,29 @@
+{
+    "name": "lambq\/ws",
+    "description": "WhatsApp Api",
+    "keywords": [
+        "whatsapp",
+        "api",
+        "laravel"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "lambq",
+            "email": "cbterli@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Lambq\\Ws\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "lambq\\ws\\WsServiceProvider"
+            ]
+        }
+    }
+}
