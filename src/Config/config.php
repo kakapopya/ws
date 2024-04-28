@@ -2,33 +2,33 @@
 
 return [
     /**
-     * Debug on or off?
+     * 调试打开还是关闭？
      */
     'debug' => true,
 
     /**
-     * Enable log?
+     * 是否启用日志？
      */
     'log' => false,
 
     /**
-     * The path for whatsapp data like media, pictures, etc..
-     * The path must be writable for webserver
+     * whatsapp数据（如媒体、图片等）的路径。。
+     * Web服务器的路径必须是可写的
      */
     'data-storage' => storage_path() . '/Ws',
 
-    // Max contacts to broadcast messages
+    // 可广播消息的最大联系人数
     'broadcast-limit' => 20,
 
     'listen-events' => true,
 
     'listen-type' => 'echo',
 
-    // Default account to use for sending messages
+    // 用于发送消息的默认帐户
     'default' => 'default',
 
     /**
-     * These are fake credentials below. Don't even bother trying to use them.
+     * 下面是伪造的凭据。甚至不用费心去使用它们。
      */
     'accounts'    => array(
         'default'   => array(
@@ -51,7 +51,7 @@ return [
     ),
 
     /**
-     * This is a list of all current events. Uncomment the ones you wish to listen to.
+     * 这是所有当前事件的列表。取消注释你想听的内容。
      */
     'events-to-listen' => [
         'onClose',
