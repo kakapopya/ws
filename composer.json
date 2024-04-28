@@ -26,7 +26,11 @@
         "laravel": {
             "providers": [
                 "Lambq\\Ws\\WhatsapiServiceProvider"
-            ]
+            ],
+            "aliases": {
+                "Whatsapi": "Lambq\\Ws\\Facades\\Laravel\\Ws",
+                "WhatsapiTool": "Lambq\\Ws\\Facades\\Laravel\\Registration"
+            }
         }
     }
 }
