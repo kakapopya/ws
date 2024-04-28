@@ -30,12 +30,12 @@ return [
     /**
      * 下面是伪造的凭据。甚至不用费心去使用它们。
      */
-    'accounts'    => array(
-        'default'   => array(
+    'accounts'    => [
+        'default'   => [
             'nickname' => 'Itnovado',
             'number'   => '5219512132132',
             'password' => '==87Vf4plh+lvOAvoURjBoKDKwciw='
-        ),
+        ],
         /*
         'another'    => array(
             'nickname' => '',
@@ -48,7 +48,8 @@ return [
             'password' => ''
         )
         */
-    ),
+    ]
+    ,
 
     /**
      * 这是所有当前事件的列表。取消注释你想听的内容。
