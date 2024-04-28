@@ -15,7 +15,7 @@
     ],
     "require": {
         "php": ">=5.4",
-        "lambq/whatsapi": "^0.0.1"
+        "lambq/whatsapi": "^0.0.2"
     },
     "autoload": {
         "psr-4": {
