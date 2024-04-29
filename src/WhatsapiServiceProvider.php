@@ -4,7 +4,6 @@ namespace Lambq\Ws;
 use Config;
 use WhatsProt;
 use Illuminate\Support\ServiceProvider;
-use Lambq\Ws\Facades\Laravel;
 class WhatsapiServiceProvider extends ServiceProvider
 {
     /**
@@ -40,10 +39,10 @@ class WhatsapiServiceProvider extends ServiceProvider
     protected function aliasAdmin()
     {
         if (! class_exists('Whatsapi')) {
-            class_alias(Ws::class, 'Whatsapi');
+            class_alias(\Lambq\Ws\Facades\Laravel\Ws::class, 'Whatsapi');
         }
         if (! class_exists('Whatsapi')) {
-            class_alias(Registration::class, 'WhatsapiTool');
+            class_alias(\Lambq\Ws\Facades\Laravel\Registration::class, 'WhatsapiTool');
         }
     }
 
