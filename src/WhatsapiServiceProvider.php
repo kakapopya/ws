@@ -25,6 +25,7 @@ class WhatsapiServiceProvider extends ServiceProvider
      */
     public function register()
     {
+        $this->aliasAdmin();
         $this->registerWhatsProt();
         $this->registerEventListener();
         $this->registerMediaManager();
