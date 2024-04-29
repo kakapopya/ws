@@ -4,7 +4,7 @@ namespace Lambq\Ws;
 use Config;
 use WhatsProt;
 use Illuminate\Support\ServiceProvider;
-
+use Lambq\Ws\Facades\Laravel;
 class WhatsapiServiceProvider extends ServiceProvider
 {
     /**
@@ -35,6 +35,16 @@ class WhatsapiServiceProvider extends ServiceProvider
         $this->registerWs();
 
         $this->mergeConfigFrom(__DIR__ . '/Config/config.php', 'Ws');
+    }
+
+    protected function aliasAdmin()
+    {
+        if (! class_exists('Whatsapi')) {
+            class_alias(Ws::class, 'Whatsapi');
+        }
+        if (! class_exists('Whatsapi')) {
+            class_alias(Registration::class, 'WhatsapiTool');
+        }
     }
 
     private function publishConfigFiles()
